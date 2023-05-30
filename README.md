@@ -2,7 +2,7 @@
 
 This markdown file provides instructions on how to set up and run the Puppeteer Booking Script. The script automates the booking process on the Trafikverket website using Puppeteer and Node.js.
 
-## Please watch this clip to get a better understanding
+## Please watch this clip to get a better understanding (You need to download the video in order to hear the audio)
 
 <video controls>
   <source src="Video\WebscraperProjekt (2).mp4" type="video/mp4">
@@ -56,6 +56,10 @@ To customize the booking parameters, update the variables in the `index.js` file
 - `iAmDesperate`: Set to `true` if you want to book any available date in the specified month and year.
 - `shouldOnlyScrape`: Set to `true` if you only want to scrape and save the available test dates without booking.
 
+## Available Catagorys, Format (Title-Subtitle, Ex: AM-Moped):
+
+<img src="images\Skärmbild 2023-05-30 131037.png">
+
 4. Save the `index.js` file after making the necessary changes.
 
 ## Usage
@@ -67,6 +71,8 @@ node index.js
 ```
 
 4. The script will launch a headless Chrome browser and perform the booking process based on the provided parameters.
+
+The programs purpuse is to scrape Trafikverket for available booking dates to take a license for "any" type of vehicle. It does also work as a automated program to book any vehicle test automaticly. (Currently does not fully book because of risks for payment)
 
 # Test Data Analysis
 
@@ -89,7 +95,9 @@ Before running the code, ensure that you have the following prerequisites instal
 Before running the code, make sure you have the necessary data file prepared:
 
 1. Create a text file named `output.txt`.
-2. Enter the required data in JSON format. The data should have the following structure:
+2. Enter the required data in JSON format.
+
+This is a vizualiser for the data gattered from running the index.js file to scrape data from Trafikverket.se, without scraping first, the vizualizer will be empty.
 
 ## License
 
